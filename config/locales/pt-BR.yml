@@ -1,0 +1,308 @@
+pt-BR:
+  views:
+    pagination:
+      first: "&laquo; Primeira"
+      last: "Última &raquo;"
+      previous: "&lsaquo; Anterior"
+      next: "Próxima &rsaquo;"
+      truncate: "..."
+  confirmations:
+    success: Email confirmado com sucesso, obrigado!
+  users:
+    new:
+      title: Cadastro
+    edit:
+      title: Editar perfil
+    show:
+      title: "Perfil: %{user_name}"
+      edit: 'Editar perfil'
+      location: "Localização: %{location}"
+      bio: "Bio: %{bio}"
+  user_sessions:
+    new:
+      title: 'Login'
+      sign_up: 'Cadastre-se'
+  signup:
+    confirm_email:
+      subject: 'Colcho.net - Confirme seu email'
+      title: 'Seja bem vindo ao Colcho.net!'
+      body: |
+        Seja bem vindo ao Colcho.net, %{full_name}.
+        O Colcho.net é o lugar ideal para você alugar aquele quarto
+        sobrando na sua casa e ainda conhecer gente do mundo inteiro.
+      confirm_link_html: 'Para você começar a usar o site, acesse o
+        link: %{link}'
+      thanks_html: 'Obrigado por se cadastrar no %{link}.'
+  links:
+    back: Voltar
+  layout:
+    rooms: Quartos
+    new_room: Cadastre seu quarto!
+    signup: Cadastro
+    signin: Login
+    my_profile: Meu perfil
+    signout: Logout
+  general:
+    form_error: Há erros no formulário, por favor verifique.
+  activerecord:
+    models:
+      room: Quarto
+      user: Usuário
+      review: Avaliação
+    attributes:
+      user:
+        bio: Biografia
+        email: Email
+        full_name: Nome completo
+        location: Localização
+        password: Senha
+        password_confirmation: Confirme sua senha
+      room:
+        description: Descrição
+        location: Localização
+        title: Título
+        picture: Foto
+      activemodel:
+        attributes:
+          user_session:
+            email: Email
+            password: Senha
+        errors:
+          messages:
+            invalid_login: 'Usuário ou senha inválidos'
+      helpers:
+        submit:
+          user_session:
+            create: 'Entrar'
+  date:
+    abbr_day_names:
+    - Dom
+    - Seg
+    - Ter
+    - Qua
+    - Qui
+    - Sex
+    - Sáb
+    abbr_month_names:
+    -
+    - Jan
+    - Fev
+    - Mar
+    - Abr
+    - Mai
+    - Jun
+    - Jul
+    - Ago
+    - Set
+    - Out
+    - Nov
+    - Dez
+    day_names:
+    - Domingo
+    - Segunda
+    - Terça
+    - Quarta
+    - Quinta
+    - Sexta
+    - Sábado
+    formats:
+      default: ! '%A, %d de %B de %Y, %H:%M h'
+      long: ! '%A, %d de %B de %Y, %H:%M h'
+      short: ! '%d/%m, %H:%M h'
+    month_names:
+    -
+    - Janeiro
+    - Fevereiro
+    - Março
+    - Abril
+    - Maio
+    - Junho
+    - Julho
+    - Agosto
+    - Setembro
+    - Outubro
+    - Novembro
+    - Dezembro
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: aproximadamente 1 hora
+        other: aproximadamente %{count} horas
+      about_x_months:
+        one: aproximadamente 1 mês
+        other: aproximadamente %{count} meses
+      about_x_years:
+        one: aproximadamente 1 ano
+        other: aproximadamente %{count} anos
+      almost_x_years:
+        one: quase 1 ano
+        other: quase %{count} anos
+      half_a_minute: meio minuto
+      less_than_x_minutes:
+        one: menos de um minuto
+        other: menos de %{count} minutos
+      less_than_x_seconds:
+        one: menos de 1 segundo
+        other: menos de %{count} segundos
+      over_x_years:
+        one: mais de 1 ano
+        other: mais de %{count} anos
+      x_days:
+        one: 1 dia
+        other: ! '%{count} dias'
+      x_minutes:
+        one: 1 minuto
+        other: ! '%{count} minutos'
+      x_months:
+        one: 1 mês
+        other: ! '%{count} meses'
+      x_seconds:
+        one: 1 segundo
+        other: ! '%{count} segundos'
+    prompts:
+      day: Dia
+      hour: Hora
+      minute: Minuto
+      month: Mês
+      second: Segundo
+      year: Ano
+  errors:
+    format: ! '%{attribute} %{message}'
+    messages:
+      invalid_login: 'Usuário ou senha inválidos'
+      accepted: deve ser aceito
+      blank: não pode ficar em branco
+      present: deve ficar em branco
+      confirmation: não é igual a %{attribute}
+      empty: não pode ficar vazio
+      equal_to: deve ser igual a %{count}
+      even: deve ser par
+      exclusion: não está disponível
+      greater_than: deve ser maior que %{count}
+      greater_than_or_equal_to: deve ser maior ou igual a %{count}
+      inclusion: não está incluído na lista
+      invalid: não é válido
+      less_than: deve ser menor que %{count}
+      less_than_or_equal_to: deve ser menor ou igual a %{count}
+      not_a_number: não é um número
+      not_an_integer: não é um número inteiro
+      odd: deve ser ímpar
+      record_invalid: ! 'A validação falhou: %{errors}'
+      restrict_dependent_destroy:
+        one: "Não é possível excluir o registro pois existe um %{record} dependente"
+        many: "Não é possível excluir o registro pois existem %{record} dependentes"
+      taken: já está em uso
+      too_long: ! 'é muito longo (máximo: %{count} caracteres)'
+      too_short: ! 'é muito curto (mínimo: %{count} caracteres)'
+      wrong_length: não possui o tamanho esperado (%{count} caracteres)
+      other_than: "deve ser diferente de %{count}"
+    template:
+      body: ! 'Por favor, verifique o(s) seguinte(s) campo(s):'
+      header:
+        one: ! 'Não foi possível gravar %{model}: 1 erro'
+        other: ! 'Não foi possível gravar %{model}: %{count} erros.'
+  helpers:
+    select:
+      prompt: Por favor selecione
+    submit:
+      create: Criar %{model}
+      submit: Salvar %{model}
+      update: Atualizar %{model}
+  number:
+    currency:
+      format:
+        delimiter: .
+        format: ! '%u %n'
+        precision: 2
+        separator: ! ','
+        significant: false
+        strip_insignificant_zeros: false
+        unit: R$
+    format:
+      delimiter: .
+      precision: 3
+      separator: ! ','
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: ! '%n %u'
+        units:
+          billion:
+            one: bilhão
+            other: bilhões
+          million:
+            one: milhão
+            other: milhões
+          quadrillion:
+            one: quatrilhão
+            other: quatrilhões
+          thousand: mil
+          trillion:
+            one: trilhão
+            other: trilhões
+          unit: ''
+      format:
+        delimiter: .
+        precision: 2
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: ! '%n %u'
+        units:
+          byte:
+            one: Byte
+            other: Bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        delimiter: .
+        format: "%n%"
+    precision:
+      format:
+        delimiter: .
+  support:
+    array:
+      last_word_connector: ! ' e '
+      two_words_connector: ! ' e '
+      words_connector: ! ', '
+  time:
+    am: ''
+    formats:
+      default: ! '%a, %d de %B de %Y, %H:%M:%S %z'
+      long: ! '%d de %B de %Y, %H:%M'
+      short: ! '%d de %B, %H:%M'
+    pm: ''
+
+  flash:
+    alert:
+      needs_login: "Você precisa estar logado para continuar"
+    notice:
+      signed_in: 'Login efetuado com sucesso!'
+      signed_out: 'Logout efetuado com sucesso. Até logo!'
+      already_logged_in: "Você já está logado."
+  dialogs:
+    destroy: 'Você tem certeza que quer remover?'
+  rooms:
+    index:
+      title: 'Quartos disponíveis'
+      search_results: 'Resultados da busca'
+    search:
+      search_for: 'Buscar por...'
+    room:
+      owner_html: '&mdash; %{owner} (%{when})'
+      edit: 'Editar'
+      destroy: 'Remover'
+    review_form:
+      login_to_review: 'Faça o login para avaliar quartos'
+    review:
+      stats:
+        one: '(1 avaliação)'
+        other: '(%{count} avaliações)'
